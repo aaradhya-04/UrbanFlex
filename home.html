@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vésta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1; /* Light grey background */
+            color: #333; /* Dark grey text */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #000; /* Black background */
+            color: #fff;
+        }
+        .header img {
+            width: 150px; /* Adjust the size of the logo */
+        }
+        .nav-links a {
+            color: #d3a15c; /* Soft brown color */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .hero {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            background: #fff; 
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            width: 250px;
+            text-align: center;
+        }
+        .shop-now {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #d3a15c; 
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .about-us {
+            background: #f9f9f9; 
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            text-align: center;
+        }
+        .about-us h2 {
+            color: #000; 
+        }
+        .about-us p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .footer {
+            background: #000; 
+            color: #bbb; 
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #d3a15c; /* Soft brown link color */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Replace the text "Vésta" with youCr logo -->
+        <img src="images\logo.jpg" alt="Vésta Logo"> <!-- Adjust the path if necessary -->
+        <div class="nav-links">
+            <a href="index.html">Collections</a>
+            <a href="signin.html">Sign In</a>
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i> <span>Cart</span></a>
+        </div>
+    </div>
+    <div class="hero">
+        <video autoplay muted loop>
+            <source src="images\homevideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>At Vésta , we are redefining the world of sportswear and sneakers. With a passion for performance, innovation, and style, we create premium footwear and apparel designed for athletes and trendsetters alike. Our commitment is to deliver high-quality products that not only enhance your performance but also make a statement, ensuring you look as good as you feel, both on and off the field. UrbanFlex is more than just gear—it's the power to elevate your game.</p>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>New Arrivals</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="images\home1.jpg" alt="Sneaker 1" width="200">
+                    <p> White Sneakers</p>
+                    <a href="#" class="shop-now">View more</a>
+                </div>
+                <div class="product">
+                    <img src="images\home2.jpg" alt="Sneaker 2" width="200">
+                    <p>Vésta Set</p>
+                    <a href="#" class="shop-now">View more</a>
+                </div>
+                <div class="product">
+                    <img src="images\home3.jpg" alt="Sneaker 3" width="200">
+                    <p> Gym Bags</p>
+                    <a href="#" class="shop-now">View more</a>
+                </div>
+                <div class="product">
+                    <img src="images\home4.jpg" alt="Sneaker 3" width="200">
+                    <p>Stanley Cup</p>
+                    <a href="#" class="shop-now">View more</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="shop-now">Shop Now</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Vésta. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>

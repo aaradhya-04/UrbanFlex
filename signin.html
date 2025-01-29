@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vésta - Register Now</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Font Poppins -->
+    <style>
+        /* Body Background */
+        body {
+            background-image: url('C:\Users\vrind\Downloads\WhatsApp Image 2025-01-29 at 15.21.40_d765a166.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #131111; /* Default text color */
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+            padding: 15px 20px;
+            text-align: center;
+            color: #d3a15c;
+            font-size: 24px;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Form Container */
+        .form-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #d3a15c;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .form-container h3 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .form-container p {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .form-container .box {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        .form-container .box:focus {
+            border-color: #f44336;
+        }
+
+        .form-container .box::placeholder {
+            color: #999;
+            font-style: italic;
+        }
+
+        /* Submit Button */
+        .form-container .btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #f44336;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container .btn:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Footer Styles */
+        .footer {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #d3a15c;
+            font-size: 14px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #d3a15c;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 30px;
+            }
+
+            .form-container h3 {
+                font-size: 20px;
+            }
+
+            .form-container p {
+                font-size: 14px;
+            }
+
+            .form-container .box {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .form-container .btn {
+                font-size: 16px;
+                padding: 12px;
+            }
+
+            .header {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+     Vésta
+</div>
+
+<!-- Form Section -->
+<section class="form-container">
+    <form id="registrationForm">
+        <h3>Sign In</h3>
+        <p>Your Name <span>*</span></p>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="50" class="box">
+        <p>Your Email <span>*</span></p>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required maxlength="50" class="box">
+        <p>Your Password <span>*</span></p>
+        <input type="password" id="pass" name="pass" placeholder="Enter your password" required maxlength="20" class="box">
+        <p>Confirm Password <span>*</span></p>
+        <input type="password" id="c_pass" name="c_pass" placeholder="Confirm your password" required maxlength="20" class="box">
+        <input type="submit" value="Register New" name="submit" class="btn">
+    </form>
+</section>
+
+<!-- Footer Section -->
+<div class="footer">
+    <p>&copy; 2025 Vésta. All rights reserved.</p>
+    <p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#">Contact Us</a>
+    </p>
+</div>
+
+<script>
+    // Function to save user data in local storage
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevents form submission for now
+
+        // Get form values
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("pass").value;
+        var c_pass = document.getElementById("c_pass").value;
+
+        // Check if passwords match
+        if (pass !== c_pass) {
+            alert("Passwords do not match!");
+            return;
+        }
+
+        // Save form data in local storage
+        localStorage.setItem("userName", name);
+        localStorage.setItem("userEmail", email);
+        localStorage.setItem("userPassword", pass);
+
+        // Confirmation message
+        alert("Registration successful! Your data has been saved.");
+        
+        // Optionally, clear the form
+        document.getElementById("registrationForm").reset();
+    });
+</script>
+
+</body>
+</html>
