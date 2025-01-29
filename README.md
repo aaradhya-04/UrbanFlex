@@ -15,8 +15,6 @@ Features
 
 •Product Showcase: Wide range of sneakers, sportswear, and bags with images and descriptions.
 
-•Responsive Design: Optimized for desktop and mobile.
-
 •Hover Effects: Smooth animations on product hover.
 
 •Add to Cart Button: Interactive button with basic JavaScript functionality.
