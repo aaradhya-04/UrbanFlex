@@ -23,19 +23,40 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
-            background: #000; /* Black background */
-            color: #fff;
+            padding: 15px 30px;
+            background: linear-gradient(to right, #000, #333); /* Smooth gradient background */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
+        
         .header img {
-            width: 150px; /* Adjust the size of the logo */
+            width: 120px; /* Slightly smaller logo for better spacing */
         }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
         .nav-links a {
             color: #d3a15c; /* Soft brown color */
             text-decoration: none;
-            margin: 0 15px;
             font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
         }
+        
+        .nav-links a:hover {
+            color: #fff; /* Change to white on hover */
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+        
+        .nav-links a:active {
+            color: #ffcc66; /* A lighter shade for active links */
+        }
+        
         .hero {
             height: 400px;
             display: flex;
@@ -114,12 +135,25 @@
             margin: 0 10px;
             font-size: 16px;
         }
+        .center-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            text-align: center;
+            color: #d3a15c;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 20px 0;
+            text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
     </style>
 </head>
 <body>
     <div class="header">
         <!-- Replace the text "Vésta" with youCr logo -->
-        <img src="images\logo.jpg" alt="Vésta Logo"> <!-- Adjust the path if necessary -->
+        <img src="images\logo.jpg" alt="Vésta Logo"> 
+        <div class="center-text">Vésta</div>
         <div class="nav-links">
             <a href="index.html">Collections</a>
             <a href="signin.html">Sign In</a>
@@ -134,7 +168,12 @@
     </div>
     <div class="about-us">
         <h2>About Us</h2>
-        <p>At Vésta , we are redefining the world of sportswear and sneakers. With a passion for performance, innovation, and style, we create premium footwear and apparel designed for athletes and trendsetters alike. Our commitment is to deliver high-quality products that not only enhance your performance but also make a statement, ensuring you look as good as you feel, both on and off the field. UrbanFlex is more than just gear—it's the power to elevate your game.</p>
+        <br><br>
+        <p>Vésta is a forward-thinking brand that is redefining the world of sportswear and sneakers by merging top-tier performance with stylish innovation. With a deep commitment to quality and design, Vésta creates footwear and apparel that caters to both athletes and fashion-forward individuals. The brand’s focus on high-performance materials ensures that each product enhances physical capabilities, while its sleek, contemporary designs make a bold statement both on and off the field.</p><br>
+
+           <p> At the heart of Vésta is a passion for pushing boundaries. Whether it’s through the latest in sneaker technology or the use of sustainable, premium fabrics, every item is crafted with precision and care. Vésta’s designs embody versatility, offering functional pieces that seamlessly integrate into everyday life, so athletes can perform at their best without compromising on style. From the court to the streets, Vésta ensures that its products are as high-performing as they are fashionable.</p><br>
+            
+            <p>Vésta isn’t just about gear; it’s about empowering individuals to take their game—and their look—to the next level. The brand is built for those who demand both performance and style in their wardrobe. Every product is an investment in quality and innovation, helping you stay ahead of the game while making a statement wherever you go. Whether you’re an elite athlete or someone who values quality and design, Vésta is here to elevate your experience.</p><br>
     </div>
     <div class="container">
         <div class="section">
@@ -143,22 +182,22 @@
                 <div class="product">
                     <img src="images\home1.jpg" alt="Sneaker 1" width="200">
                     <p> White Sneakers</p>
-                    <a href="#" class="shop-now">View more</a>
+                    <a href="index.html" class="shop-now">View more</a>
                 </div>
                 <div class="product">
                     <img src="images\home2.jpg" alt="Sneaker 2" width="200">
                     <p>Vésta Set</p>
-                    <a href="#" class="shop-now">View more</a>
+                    <a href="index.html" class="shop-now">View more</a>
                 </div>
                 <div class="product">
                     <img src="images\home3.jpg" alt="Sneaker 3" width="200">
                     <p> Gym Bags</p>
-                    <a href="#" class="shop-now">View more</a>
+                    <a href="index.html" class="shop-now">View more</a>
                 </div>
                 <div class="product">
                     <img src="images\home4.jpg" alt="Sneaker 3" width="200">
                     <p>Stanley Cup</p>
-                    <a href="#" class="shop-now">View more</a>
+                    <a href="index.html" class="shop-now">View more</a>
                 </div>
             </div>
         </div>
