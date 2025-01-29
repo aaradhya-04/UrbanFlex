@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Vésta </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+    </nav>
+    
+    <section class="categories">
+        <button class="category-btn" onclick="filterProducts('all')">All</button>
+        <button class="category-btn" onclick="filterProducts('sneakers')">Sneakers</button>
+        <button class="category-btn" onclick="filterProducts('sportswear')">Sportswear</button>
+        <button class="category-btn" onclick="filterProducts('accessories')">Accessories</button>
+    </section>
+
+    <section class="product-container" id="product-list">
+        
+            <!-- Sneaker Products -->
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe1.jpg" alt="Sneaker 1">
+                <h3>Nike Air Max 2021</h3>
+                <p>$120</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe2.jpg" alt="Sneaker 2">
+                <h3>Adidas Ultraboost</h3>
+                <p>$180</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe3.jpg" alt="Sneaker 1">
+                <h3>Nike Air Max 2021</h3>
+                <p>$120</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe4.jpg" alt="Sneaker 2">
+                <h3>Adidas Ultraboost</h3>
+                <p>$180</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe5.jpg" alt="Sneaker 1">
+                <h3>Nike Air Max 2021</h3>
+                <p>$120</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe6.jpg" alt="Sneaker 2">
+                <h3>Adidas Ultraboost</h3>
+                <p>$180</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe7.jpg" alt="Sneaker 1">
+                <h3>Nike Air Max 2021</h3>
+                <p>$120</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe8.jpg" alt="Sneaker 2">
+                <h3>Adidas Ultraboost</h3>
+                <p>$180</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe9.jpg" alt="Sneaker 1">
+                <h3>Nike Air Max 2021</h3>
+                <p>$120</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe10.jpg" alt="Sneaker 2">
+                <h3>Adidas Ultraboost</h3>
+                <p>$180</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe11.jpg" alt="Sneaker 1">
+                <h3>Nike Air Max 2021</h3>
+                <p>$120</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe12.jpg" alt="Sneaker 2">
+                <h3>Adidas Ultraboost</h3>
+                <p>$180</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe13.jpg" alt="Sneaker 1">
+                <h3>Nike Air Max 2021</h3>
+                <p>$120</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe14.jpg" alt="Sneaker 2">
+                <h3>Adidas Ultraboost</h3>
+                <p>$180</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers">
+                <img src="images/shoe15.jpg" alt="Sneaker 2">
+                <h3>Adidas Ultraboost</h3>
+                <p>$180</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+        
+            <!-- Sportswear Products -->
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym1.jpg" alt="Sportswear 1">
+                <h3>Puma Sports Hoodie</h3>
+                <p>$60</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym2.jpg" alt="Sportswear 2">
+                <h3>Reebok Gym Shorts</h3>
+                <p>$40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym3.jpg" alt="Sportswear 1">
+                <h3>Puma Sports Hoodie</h3>
+                <p>$60</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym4.jpg" alt="Sportswear 2">
+                <h3>Reebok Gym Shorts</h3>
+                <p>$40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym5.jpg" alt="Sportswear 1">
+                <h3>Puma Sports Hoodie</h3>
+                <p>$60</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym6.jpg" alt="Sportswear 2">
+                <h3>Reebok Gym Shorts</h3>
+                <p>$40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym7.jpg" alt="Sportswear 1">
+                <h3>Puma Sports Hoodie</h3>
+                <p>$60</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym8.jpg" alt="Sportswear 2">
+                <h3>Reebok Gym Shorts</h3>
+                <p>$40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym9.jpg" alt="Sportswear 1">
+                <h3>Puma Sports Hoodie</h3>
+                <p>$60</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym10.jpg" alt="Sportswear 2">
+                <h3>Reebok Gym Shorts</h3>
+                <p>$40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym11.jpg" alt="Sportswear 1">
+                <h3>Puma Sports Hoodie</h3>
+                <p>$60</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym12.jpg" alt="Sportswear 2">
+                <h3>Reebok Gym Shorts</h3>
+                <p>$40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym13.jpg" alt="Sportswear 1">
+                <h3>Puma Sports Hoodie</h3>
+                <p>$60</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym14.jpg" alt="Sportswear 2">
+                <h3>Reebok Gym Shorts</h3>
+                <p>$40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sportswear">
+                <img src="images/gym15.jpg" alt="Sportswear 2">
+                <h3>Reebok Gym Shorts</h3>
+                <p>$40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <!-- Accessories Products -->
+            <div class="product-card" data-category="accessories">
+                <img src="images/shoe1.jpg" alt="Accessory 1">
+                <h3>Urban Backpack</h3>
+                <p>$45</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        
+            <div class="product-card" data-category="accessories">
+                <img src="images/access2.jpg" alt="Accessory 2">
+                <h3>Sporty Cap</h3>
+                <p>$25</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="accessories">
+                <img src="images/access2.jpg" alt="Accessory 2">
+                <h3>Sporty Cap</h3>
+                <p>$25</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="accessories">
+                <img src="images/access2.jpg" alt="Accessory 2">
+                <h3>Sporty Cap</h3>
+                <p>$25</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="accessories">
+                <img src="images/access2.jpg" alt="Accessory 2">
+                <h3>Sporty Cap</h3>
+                <p>$25</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="accessories">
+                <img src="images/access2.jpg" alt="Accessory 2">
+                <h3>Sporty Cap</h3>
+                <p>$25</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+          
+        
+        
+        
+        <!-- Products will be dynamically added here -->
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="widget">
+                    <h4>About Guftgoo</h4>
+                    <p>Located in the heart of Goa, Guftgoo Cafe offers a cozy atmosphere with exceptional coffee and delicious meals. Join us for a unique dining experience!</p>
+                </div>
+                <div class="widget">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html">Cart</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="tel:080-090-0990">080-090-0990</a></li>
+                        <li><a href="mailto:hello@company.com">vésta.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+</html>
